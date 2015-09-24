@@ -1,5 +1,4 @@
 var bio = {
-<<<<<<< HEAD
 	"name": "Ben Collins",
 	"role": "Web Developer",
 	"welcomeMessage": "Welcome to my resume! Please explore and feel free to contact me with any questions.",
@@ -302,7 +301,7 @@ var onlineClasses = {
 			"school": "Udacity",
 			"dates": "2015",
 			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
->>>>>>> 88e5b6d93133d33abc7aaa10cd5fdb6ee4334843
+
 };
 
 
@@ -397,7 +396,7 @@ displaySkills();
 bio.display();
 
 //Work Information
->>>>>>> 88e5b6d93133d33abc7aaa10cd5fdb6ee4334843
+
 function displayWork() {
 		for(job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
@@ -531,5 +530,5 @@ var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses
 education.display();
 
 //Google Maps Info
->>>>>>> 88e5b6d93133d33abc7aaa10cd5fdb6ee4334843
+
 $("#mapDiv").append(googleMap);
