@@ -1,534 +1,342 @@
 var bio = {
 	"name": "Ben Collins",
-	"role": "Web Developer",
-	"welcomeMessage": "Welcome to my resume! Please explore and feel free to contact me with any questions.",
+	"role": "Web developer",
+	"WelcomeMessage":"Enterprise Risk Management Analyst with an interest in the technical side.",
 	"contacts": {
-		"mobile": "(555)-555-5555",
-		"email": "noemail@noemail.com",
-		"github": "bendroid",
-		"twitter": "@jaemood",
-		"location": "Rochester, NY"
+		"mobile":"(555) 555-5555",
+		"email":"collins.drums@gmail.com",
+		"github":"bendroid",
+		"twitter":"@jaemood",
+		"location":"Rochester, NY"
 	},
-	"skills": [
-		"Website design and creation", "Search Engine Optimization", "JS"
-		],
-	"bioPic": "./images/ben-sm.jpg"
-	//display: function taking no paramaters
+	"bioPic": "images/ben-sm.jpg"
 };
 
-var contacts = {
-	"mobile": "(555)-555-5555",
-	"email": "noemail@noemail.com",
-	"github": "bendroid",
-	"twitter": "@jaemood",
-	"location": "Rochester, NY"
-};
-
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-$("#header").prepend(formattedRole);
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-$("#header").prepend(formattedName);
-var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
-$("#header").append(formattedPic);
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-$("#topContacts").append(formattedEmail);
-$("#footerContacts").append(formattedEmail);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-$("#topContacts").append(formattedTwitter);
-$("#footerContacts").append(formattedTwitter);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-$("#topContacts").append(formattedGithub);
-$("#footerContacts").append(formattedGithub);
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-$("#topContacts").append(formattedMobile);
-$("#footerContacts").append(formattedMobile);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-$("#topContacts").append(formattedLocation);
-$("#footerContacts").append(formattedLocation);
-var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-
-var work = {
-	"jobs": [
+var skills = {
+	"techSkills":
+	[
 		{
-			"employer": "Paychex",
-			"title": "Research Services Specialist",
-			"location": "Rochester, NY",
-			"dates": "June 2010 - Present",
-			"description": "Manage the Circulation Desk at the Law Library; Hire, train and supervise staff of 10 â€“ 12 student workers; Draft and publish guides for library patrons; Process interlibrary loan requests for students and faculty; Assist students and members of the public in their use of library materials; Teach research classes in legal writing program; Participate in collection development; Serve as a liaison in the library's Faculty Liaison Program."
+			"name": "HTML",
+			"ability": 60
 		},
 		{
-			"employer": "Company 2",
-			"title": "Green Bag Journal Fellow",
-			"location": "Rochester, NY",
-			"dates": "April 2009 - July 2010",
-			"description": "Managed day-to-day activities of The Green Bag journal (general law journal featuring eclectic mix of readable legal scholarship: www.greenbag.org); Worked with publishers and authors to secure reprint copyright licenses; Conducted research on a range of issues from copyright status of works to law journal circulation numbers."
+			"name": "CSS",
+			"ability": 50,
 		},
 		{
-			"employer": "Company 3",
-			"title": "Writing Fellow",
-			"location": "Rochester, NY",
-			"dates": "Fall 2008 - Spring 2009",
-			"description": "Taught First Year legal research and writing class; Designed lectures and projects; Graded studentsâ€™ written work."
+			"name": "Javascript",
+			"ability": 30,
 		},
 		{
-			"employer": "Company 4",
-			"title": "SLIP Intern",
-			"location": "Rochester, NY",
-			"dates": "Summer 2008",
-			"description": "Conducted in-depth research on ethics issues; Drafted memoranda and opinion letters."
+			"name": "C++",
+			"ability": 60,
 		},
 		{
-			"employer": "Company 5",
-			"title": "Intern",
-			"location": "Rochester, NY",
-			"dates": "Spring 2008",
-			"description": "Researched and wrote memoranda on First Amendment issues, with focus on religion clause."
+			"name": "Python",
+			"ability": 60,
+		}
+	],
+	"langSkills":
+	[
+		{
+			"language": "Korean - navtive tongue",
+			"ability": 100
 		},
 		{
-			"employer": "Company 6",
-			"title": "Law Clerk",
-			"location": "Rochester, NY",
-			"dates": "Fall 2007 - Spring 2008",
-			"description": "Researched several tort claims; Drafted complaints, motions, and discovery documents."
-		},
-		{
-			"employer": "Company 7",
-			"title": "Law Clerk",
-			"location": "Rochester, NY",
-			"dates": "Fall 2007 - Spring 2008",
-			"description": "Wrote memoranda for brief to Supreme Court of the Northern Mariana Islands."
-		},
-		{
-			"employer": "Company 8",
-			"title": "Intern",
-			"location": "Rochester, NY",
-			"dates": "Summer 2007",
-			"description": "Provided legal services to indigent clients, with a focus on consumer, housing, and family law."
-		},
-		{
-			"employer": "Company 9",
-			"title": "Starbucks Manager",
-			"location": "Rochester, NY",
-			"dates": "August 2005 - August 2006",
-			"description": "Opened and then managed a Starbucks kiosk in a brand new Harris Teeter grocery store. Participated in the hiring of employees for the new store."
-		},
-		{	
-			"employer": "Company 10",
-			"title": "English Teacher",
-			"location": "Rochester, NY",
-			"dates": "April 2004 - April 2005",
-			"description": "Taught English to small groups of Japanese students of varying ages and ability levels. Learned Japanese customs and culture."
-		},
-		{
-			"employer": "Company 11",
-			"title": "Sales Associate",
-			"location": "Rochester, NY",
-			"dates": "Fall 2003",
-			"description": "Sold sports memorabilia."
+			"language": "English - full proficiency",
+			"ability": 90
 		}
 	]
-};
-
-var projects = { 
-	"projects": [
-		{ 
-		"title": "Webpage",
-		"dates": "2015",
-		"description": "Udacity P1",
-		"images": ["./images/image-src.png"]
-		},
-		{ 
-		"title": "placeholder",
-		"dates": "2015",
-		"description": "placeholder",
-		"images": ["./images/image-1x.png"]
-		}
-	]
-=======
-  	"name": "Ben Collins",
-  	"role": "Web Developer",
-  	"contacts": {
-  		"mobile": "555-555-5555",
-  		"email": "collins.drums@gmail.com",
-  		"github": "bendroid",
-  		"twitter": "@jaemood",
-  		"location": "Rochester, NY"
-  	},
-  	"welcomeMessage": "Welcome to my resume! Please explore and feel free to contact me with any questions!",
-  	"skills": [
-		"HTML5", "CSS3", "Javascript", "CanvasJS", "Adobe Creative Suite"
-  	],
-  	"bioPic": "./images/biopic.jpg",
 };
 
 var work = {
-	"jobs": [
+	"jobs":
+	[
 		{
-			"employer": "Paychex",
-			"title": "Research Services Specialist",
-			"location": "Rochester, NY",
-			"dates": "June 2010 - Present",
-			"description": "Manage the Circulation Desk at the Law Library; Hire, train and supervise staff of 10 – 12 student workers; Draft and publish guides for library patrons; Process interlibrary loan requests for students and faculty; Assist students and members of the public in their use of library materials; Teach research classes in legal writing program; Participate in collection development; Serve as a liaison in the library's Faculty Liaison Program."
+			"employer":"Paychex Inc.",
+			"title":"Enterprise Risk Management",
+			"location":"Rochester, NY",
+			"dates":"2010 - 2015",
+			"description":"Mitigate risk factors. Financial crime prevention",
+			"URL": "https://paychex.com/"
 		},
 		{
-			"employer": "Company 2",
-			"title": "Green Bag Journal Fellow",
-			"location": "Rochester, NY",
-			"dates": "April 2009 - July 2010",
-			"description": "Managed day-to-day activities of The Green Bag journal (general law journal featuring eclectic mix of readable legal scholarship: www.greenbag.org); Worked with publishers and authors to secure reprint copyright licenses; Conducted research on a range of issues from copyright status of works to law journal circulation numbers."
+			"employer":"TGIB Marketing Inc.",
+			"title":"Research Assistant",
+			"location":"Suffolk, VA",
+			"dates":"2009 - 2010",
+			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D",
+			"URL": "http://www.rockbottomgolf.com.com/"
 		},
 		{
-			"employer": "Company 3",
-			"title": "Writing Fellow",
-			"location": "Rochester, NY",
-			"dates": "Fall 2008 - Spring 2009",
-			"description": "Taught First Year legal research and writing class; Designed lectures and projects; Graded students’ written work."
-		},
-		{
-			"employer": "Company 4",
-			"title": "SLIP Intern",
-			"location": "Rochester, NY",
-			"dates": "Summer 2008",
-			"description": "Conducted in-depth research on ethics issues; Drafted memoranda and opinion letters."
-		},
-		{
-			"employer": "Company 5",
-			"title": "Intern",
-			"location": "Rochester, NY",
-			"dates": "Spring 2008",
-			"description": "Researched and wrote memoranda on First Amendment issues, with focus on religion clause."
-		},
-		{
-			"employer": "Company 6",
-			"title": "Law Clerk",
-			"location": "Rochester, NY",
-			"dates": "Fall 2007 - Spring 2008",
-			"description": "Researched several tort claims; Drafted complaints, motions, and discovery documents."
-		},
-		{
-			"employer": "Company 7",
-			"title": "Law Clerk",
-			"location": "Rochester, NY",
-			"dates": "Fall 2007 - Spring 2008",
-			"description": "Wrote memoranda for brief to Supreme Court of the Northern Mariana Islands."
-		},
-		{
-			"employer": "Company 8",
-			"title": "Intern",
-			"location": "Rochester, NY",
-			"dates": "Summer 2007",
-			"description": "Provided legal services to indigent clients, with a focus on consumer, housing, and family law."
-		},
-		{
-			"employer": "Company 9",
-			"title": "Starbucks Manager",
-			"location": "Rochester, NY",
-			"dates": "August 2005 - August 2006",
-			"description": "Opened and then managed a Starbucks kiosk in a brand new Harris Teeter grocery store. Participated in the hiring of employees for the new store."
-		},
-		{	
-			"employer": "Company 10",
-			"title": "English Teacher",
-			"location": "Rochester, NY",
-			"dates": "April 2004 - April 2005",
-			"description": "Taught English to small groups of Japanese students of varying ages and ability levels. Learned Japanese customs and culture."
-		},
-		{
-			"employer": "Company 11",
-			"title": "Sales Associate",
-			"location": "Rochester, NY",
-			"dates": "Fall 2003",
-			"description": "Sold sports memorabilia."
+			"employer":"Korean Military",
+			"title":"Sergent",
+			"location":"Rochester, NY",
+			"dates":"2003 - 2005",
+			"description":"worked in transportation department to transport vehicle components and organized them in stock",
+			"URL": "http://www.mnd.go.kr/mbshome/mbs/mnd_eng/"
 		}
 	]
 };
-var projects = { 
-	"projects": [
-		{ 
-		"title": "Webpage",
-		"dates": "2015",
-		"description": "Udacity P1",
-		"images": ["./images/image-src.png"]
-		},
-		{ 
-		"title": "placeholder",
-		"dates": "2015",
-		"description": "placeholder",
-		"images": ["./images/image-1x.png"]
-		}
-	]
-};
+
 var projects = {
-	"projects":[
-	{
-		"title": "Magazine Publication",
-		"dates": "2014 - 2015",
-		"description": "I created a Magazine spread for an event.",
-		"images": "http://kimberlymihiel.com/images/work05.jpg",
-	},
-	{ 
-		"title": "Webpage",
-		"dates": "2015",
-		"description": "Udacity P1",
-		"images": "./images/image-src.png"
+	"projects":
+	[
+		{
+			"title":"Garage Door Opener",
+			"dates":"2015",
+			"description":"Built upon Rasberry Pi to monitor and control garage door by using Pi camera and NPN transistor.",
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 80
+		},
+		{
+			"title":"Optical Coherence Tomograph(OCT) research",
+			"dates":"2010",
+			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
+			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"],
+			"progress": 100
+		},
+		{
+			"title":"LEGO MINDSTORMS NTX project",
+			"dates":"2008",
+			"description":"Built a robot that detected an object, picked it up and brought it to a marked position. ",
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 100
 		}
 	]
 };
 
-var education = {
-	"schools": [
-		{
-			"name": "Gustavus Adolphus College",
-			"location": "St. Peter, MN, US",
-			"degree": "BA",
-			"major": ["Studio Art", "Political Science"],
-			"dates": "Fall 1999 - Spring 2003",
-			"url": "https://gustavus.edu/"
-		},
-		{
-			"name": "George Mason University School of Law",
-			"location": "Arlington, VA, US",
-			"degree": "J.D.",
-			"major": "Law",
-			"dates": "Fall 2006 - Spring 2009",
-			"url": "http://www.law.gmu.edu/"
-		},
-	]	
-};
+bio.display = function(){
 
-var onlineClasses = {
-			"title": "Front-End Web Developer Nanodegree",
-			"school": "Udacity",
-			"dates": "2015",
-			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-
-};
-
-
-var education = {
-<<<<<<< HEAD
-	"schools": [
-		{
-			"name": "Gustavus Adolphus College",
-			"location": "St. Peter, MN, US",
-			"degree": "BA",
-			"majors": ["Studio Art", "Political Science"],
-			"dates": "Fall 1999 - Spring 2003",
-			"url": "https://gustavus.edu/"
-		},
-		{
-			"name": "George Mason University School of Law",
-			"location": "Arlington, VA, US",
-			"degree": "J.D.",
-			"majors": "Law",
-			"dates": "Fall 2006 - Spring 2009",
-			"url": "http://www.law.gmu.edu/"
-		},
-	]	
-};
-
-var onlineClasses = {
-			"title": "Front-End Web Developer Nanodegree",
-			"school": "Udacity",
-			"dates": "2015",
-			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-};
-
-if(bio.skills.length > 0) {
-	$("#header").append(HTMLskillsStart);
-	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-	$("#skills").append(formattedSkill);
-	var formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-	$("#skills").append(formattedSkill);
-	var formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-	$("#skills").append(formattedSkill);
-}
-
-=======
-	"schools":[{
-		"name": "Lock Haven University",
-		"location": "Lock Haven, PA",
-		"degree": "BFA in Studio Art",
-		"major": "Graphic and Online Design",
-		"dates": "2011-2014",
-		"url": "http://www.lhup.edu"
-	}],
-	"onlineCourses":[{
-		"title": "Intro to HTML and CSS",
-		"school": "O'Reilly School of Technology",
-		"dates": "2015",
-		"url": "http://www.oreillyschool.com"
-	}]
-};
-
-//Bio Information
-bio.display = function() {
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+
+	$("#header").prepend(formattedRole);
+	$("#header").prepend(formattedName);
+
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-	var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#header").prepend(formattedRole);
-		$("#header").prepend(formattedName);
-		$("#header").append(formattedBioPic);
-		$("#header").append(formattedWelcomeMsg);
-		$("#header").append(HTMLskillsStart);
+	$("#bioPic").append(formattedBioPic);
+
+	var formattedMsg = HTMLwelcomeMsg.replace("%data%", bio.WelcomeMessage);
+	$("#aboutMe").append(formattedMsg);
 
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-	var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
+									.replace("#", "https://github.com/bendroid");
+
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
+									  .replace("#", "https://twitter.com/jaemood");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-	var allContacts = formattedMobile + formattedEmail + formattedGithub + formattedtwitter + formattedLocation;
-		$("#topContacts").append(allContacts);
-		$("#footerContacts").append(allContacts);
 
+	$("#topContacts ul").append(formattedMobile);
+	$("#topContacts ul").append(formattedEmail);
+	$("#topContacts ul").append(formattedGithub);
+	$("#topContacts ul").append(formattedTwitter);
+	$("#topContacts ul").append(formattedLocation);
 
-	
-function displaySkills() {
-	for (skill in bio.skills) {
-		var formattedSkills = HTMLskills.replace("%data%", bio.skills[skill]);
-		$("#header").append(formattedSkills);
+	var formattedMobile_footer = HTMLmobile_footer.replace("%data%", bio.contacts.mobile);
+	var formattedEmail_footer = HTMLemail_footer.replace("%data%", bio.contacts.email);
+	var formattedGithub_footer = HTMLgithub_footer.replace("%data%", bio.contacts.github)
+													.replace("#", "https://github.com/bendroid");
+
+	var formattedTwitter_footer = HTMLtwitter_footer.replace("%data%", bio.contacts.twitter)
+													  .replace("#", "https://twitter.com/jaemood");
+	var formattedLocation_footer = HTMLlocation_footer.replace("%data%", bio.contacts.location);
+
+	$("#footerContacts ul").append(formattedMobile_footer);
+	$("#footerContacts ul").append(formattedEmail_footer);
+	$("#footerContacts ul").append(formattedGithub_footer);
+	$("#footerContacts ul").append(formattedTwitter_footer);
+	$("#footerContacts ul").append(formattedLocation_footer);
+
+};
+
+skills.display = function(){
+
+	for (var skill in skills.techSkills){
+		var pbar = 'pbar' + skill;
+		var pbarLabel = 'pbar' + skill.toString() + '-label';
+
+		var formattetdSkillOutter = HTMLskillOutter.replace("#id", pbar);
+		var formattedSkillInner = HTMLskillInner.replace("#id", pbarLabel);
+
+		$("#techSkills").append(formattetdSkillOutter);
+		$("#"+ pbar).append(formattedSkillInner);
+
+		$("#"+pbar).progressbar({
+			value: skills.techSkills[skill].ability,
+			create: function(){
+				$("#"+pbarLabel).text(skills.techSkills[skill].name);
+				$("#"+pbar + "> div").css({ 'background': 'rgb(88, 185, 250)' });
+			}
+		});
 	}
-}
-displaySkills();
+/*
+	for (skill in skills.langSkills){
+		var langBar = 'langBar' + skill;
+		var langBarLabel = 'langBar' + skill.toString() + '-label';
 
-	};
-bio.display();
+		$("#"+langBar).progressbar({
+			value: skills.langSkills[skill].ability,
+			create: function(){
+				$("#"+langBarLabel).text(skills.langSkills[skill].language);
+				$("#"+langBar + "> div").css({ 'background': '#04B404' });
+			}
+		});
+	}
+	*/
+};
 
-//Work Information
-
-function displayWork() {
-		for(job in work.jobs) {
+work.display = function() {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer)
+												.replace("#", work.jobs[job].URL)
+
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
 		$(".work-entry:last").append(formattedEmployerTitle);
-		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		$(".work-entry:last").append(formattedDates);
+
+		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+		$(".work-entry:last").append(formattedDate);
+
 		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 		$(".work-entry:last").append(formattedLocation);
+
+		//var formattedDateLocation = formattedDate + formattedLocation;
+		//$(".work-entry:last").append(formattedDateLocation);
+
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
-	};
-}
-<<<<<<< HEAD
-
-displayWork();
-
-$(document).click(function(loc) {
-  var x = loc.pageX;
-  var y = loc.pageY;
-
-  logClicks(x,y);
-});
+	}
+};
 
 projects.display = function() {
-	for(project in projects.projects) {
+
+	for (var project in projects.projects){
+
+		var div = 'div' + project;
 		$("#projects").append(HTMLprojectStart);
+		$(".project-entry:last").append('<div id="' + div + '" class="text-center side-padding"></div>');
+
+
+		var divN = d3.select(document.getElementById(div));
+        var rp = radialProgress(document.getElementById(div))
+                .diameter(150)
+                .value(projects.projects[project].progress)
+                .render();
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedTitle);
+		$("#" + div).append(formattedTitle);
+
 		var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$(".project-entry:last").append(formattedDate);
+		$("#" + div).append(formattedDate);
+
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedDescription);
-		var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
-		$(".project-entry:last").append(formattedImage);
-
-		if(projects.projects[project].images.length > 0) {
-			for(image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-				$(".project-entry:last").append(formattedImage);
-			}
-		}	
+		$("#" + div).append(formattedDescription);
 	}
 };
 
-projects.display();
-
-=======
-
-displayWork();
-
-$(document).click(function(loc) {
-  var x = loc.pageX;
-  var y = loc.pageY;
-
-  logClicks(x,y);
-});
-
-projects.display = function() {
-	for(project in projects.projects) {
-		$("#projects").append(HTMLprojectStart);
-
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedTitle);
-		var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$(".project-entry:last").append(formattedDate);
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedDescription);
-		var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
-		$(".project-entry:last").append(formattedImage);
-
-		/*if(projects.projects[project].images.length > 0) {
-			for(image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-				$(".project-entry:last").append(formattedImage);
-			}
-		}*/
-	}
-};
-
-projects.display();
-/*
-//Project information
-projects.display = function(){
-	for (project in projects.projects) {
-		$("#projects").append(HTMLprojectStart);
-	}
-var formattedprojectTitle = HTMLprojectTitle.replace("%data%", projects.projects.title);
-var formattedprojectDates = HTMLprojectDates.replace("%data%", projects.projects.dates);
-var formattedprojectDescription = HTMLprojectDescription.replace("%data%", projects.projects.description);
-	$("#projects").append(formattedprojectTitle);
-	$("#projects").append(formattedprojectDates);
-	$("#projects").append(formattedprojectDescription);
-
-	if(projects.projects.images.length > 0) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects.images);
-				$("#projects").append(formattedImage);
-			}
+var education = {
+	"schools": [
+		{
+			"name":"St. Bonaventure University",
+			"degree":"Bachelor of Science in Engineering",
+			"major":"Biomedical Engineering",
+			"dates":"2007 - 2010",
+			"location":"Olean, NY",
+			"URL": "http://engineering.case.edu/ebme/"
+		}
+	],
+	"onlineCourses": [{
+		"title":"Front-end Web development",
+		"school":"Udacity",
+		"dates":"2015",
+		"URL": "https://www.udacity.com/nanodegrees"
+	},
+	{
+		"title":"Introduction to Computer Science and Programming Using Python",
+		"school":"edX",
+		"dates":"2014",
+		"URL": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/"
+	}]
 
 };
-projects.display();
-*/
 
-//Education information
-education.display = function() {
-	for(school in education.schools) {
+education.display = function(){
+	for (var school in education.schools){
 		$("#education").append(HTMLschoolStart);
+
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name)
+											.replace("#", education.schools[school].URL);
+
+		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+
+		var formattedNameDegree = formattedName + formattedDegree;
+		$(".education-entry:last").append(formattedNameDegree);
+
+		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+		$(".education-entry:last").append(formattedDate);
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
+
+		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+		$(".education-entry:last").append(formattedMajor);
 	}
-var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-var formattedschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[school].title);
-var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[school].school);
-var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[school].dates);
-var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[school].url);
-	$("#education").append(formattedschoolName);
-	$("#education").append(formattedschoolLocation);
-	$("#education").append(formattedschoolDegree);
-	$("#education").append(formattedschoolMajor);
-	$("#education").append(formattedschoolDates);
-	$("#education").append(formattedonlineTitle);
-	$("#education").append(formattedonlineSchool);
-	$("#education").append(formattedonlineDates);
-	$("#education").append(formattedonlineURL);
-};
+
+	$("#education").append(HTMLonlineClasses);
+
+	for (course in education.onlineCourses){
+		$("#education").append(HTMLschoolStart);
+
+		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+		//$(".education-entry:last").append(formattedTitle);
+
+		var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+		//$(".education-entry:last").append(formattedSchool);
+
+		var formattedTitleSchool = formattedTitle + formattedSchool;
+		$(".education-entry:last").append(formattedTitleSchool);
+
+		var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+		$(".education-entry:last").append(formattedDate);
+
+		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].URL)
+										.replace("#", education.onlineCourses[course].URL);
+		$(".education-entry:last").append(formattedURL);
+
+	}
+}
+
+//calling functions for page layout starts here.
+bio.display();
+skills.display();
+work.display();
+//projects.display();
 education.display();
 
-//Google Maps Info
+$(document).ready(function(){
+	projects.display();
+});
 
-$("#mapDiv").append(googleMap);
+/*
+//$("#main").append(internationalizeButton);
+
+function inName(oldName) {
+	var finalName;
+    var name = oldName.split(' ');
+    firstName = name[0];
+    lastName = name[1];
+
+    finalName = firstName[0].toUpperCase() + firstName.slice(1).toLowerCase()  + ' ' + lastName.toUpperCase();
+
+    // Don't delete this line!
+    return finalName;
+}
+//var inter_name = inNmae("sebastian thrun");
+//$("#main").append(inter_name);
+
+*/
